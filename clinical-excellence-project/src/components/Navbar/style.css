@@ -1,0 +1,16 @@
+.brandSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #292f36;
+}
+.brandTitle {
+  padding-left: 10px;
+
+  font-family: Oswald;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+}

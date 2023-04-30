@@ -1,0 +1,17 @@
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.iconsContainer i{
+    color: #ffffff;
+}
+
+.number{
+    color: #ffffff;
+}
+
+.iconsContainer i:hover {
+  color: #e7064a !important;
+}

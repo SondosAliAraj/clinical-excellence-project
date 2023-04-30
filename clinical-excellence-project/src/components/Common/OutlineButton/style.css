@@ -1,0 +1,38 @@
+.outlineBtn {
+  height: 55px;
+  /* width: 162px; */
+  left: 201px;
+  top: 0px;
+  border-radius: 5px;
+  padding: 15px 40px 15px 40px;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+
+  /* light-text-color */
+
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  background-color: transparent;
+}

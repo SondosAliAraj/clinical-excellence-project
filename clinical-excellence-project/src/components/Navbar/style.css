@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   color: #292f36;
+  margin-right: 0% !important;
 }
 .brandTitle {
   padding-left: 10px;
@@ -13,4 +14,23 @@
   line-height: 30px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  /* margin-right: 137.5px; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandTitle:hover {
+  color: #e7064a !important;
+}
+
+@media screen and (max-width:600px) {
+
+  
 }

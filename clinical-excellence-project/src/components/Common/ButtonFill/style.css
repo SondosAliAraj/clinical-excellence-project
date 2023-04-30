@@ -1,0 +1,20 @@
+.customBtn {
+  height: 55px;
+  width: 191px;
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #23a6f0;
+  border-radius: 5px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+
+  border: 1px solid #23a6f0;
+}

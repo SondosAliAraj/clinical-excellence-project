@@ -1,0 +1,68 @@
+.navbar-toggler-icon {
+  background-image: url("../../../../public/assets/Vector.svg"); /* replace "path/to/your/custom/icon.svg" with the path to your custom icon file */
+  width: 1em; /* set the width and height to match the size of your icon */
+  height: 1em;
+  background-repeat: no-repeat; /* prevent the icon from repeating */
+  background-size: contain; /* scale the icon to fit the button */
+  background-position: center; /* center the icon within the button */
+  /*border: none;  remove the border */
+  border-style: none; /* remove the border */
+}
+.navbar-toggler {
+  border-style: none; /* remove the border */
+}
+
+.itemsText a {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #ffffff;
+}
+.navbarItem:hover {
+  color: #e7064a !important;
+}
+
+#dropdown-basic {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#dropdown-basic:hover {
+  color: #e7064a !important;
+}
+
+.navbarContainer {
+  /* margin-right: 137.5px;
+  margin-left: 124px; */
+}
+
+.dropdown-menu {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-toggle::after {
+  /* content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px; */
+  display: none;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

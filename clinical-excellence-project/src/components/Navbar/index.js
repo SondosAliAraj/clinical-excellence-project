@@ -9,14 +9,16 @@ import RightIcons from "./RightIcons";
 const Navbar = () => {
   return (
     <>
-      <nav className=" navbar navbar-expand-md  sticky-xl-top  py-3">
-        <div className="container navbarContainer">
+      <nav className=" navbar navbar-expand-lg  sticky-xl-top   navbarContainerSmallScreen">
+        <div className="container navbarContainer order-first">
           <a href="#home" className="navbar-brand brandSection">
             <h3 className="brandTitle ">MEDSONO</h3>
           </a>
-          <NavbarItem />
-          <Register />
-          <RightIcons />
+          <div className="iconsContainer">
+            <NavbarItem />
+            <Register />
+            <RightIcons />
+          </div>
         </div>
       </nav>
     </>

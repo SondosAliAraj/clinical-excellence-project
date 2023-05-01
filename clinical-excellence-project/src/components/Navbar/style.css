@@ -30,7 +30,47 @@
   color: #e7064a !important;
 }
 
-@media screen and (max-width:600px) {
+.navbarContainerSmallScreen {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
 
-  
+@media screen and (max-width: 600px) {
+  .iconsContainer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .navbarContainer {
+    background-color: #252b42;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+  }
+  .navbarContainerSmallScreen {
+    padding: 0% !important;
+  }
+  .navbarAppContainer {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background-color: #252b42;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iconsContainer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .navbarContainer {
+    background-color: #252b42;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+  }
+  .navbarContainerSmallScreen {
+    padding: 0% !important;
+  }
+  .navbarAppContainer {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background-color: #252b42;
+  }
 }

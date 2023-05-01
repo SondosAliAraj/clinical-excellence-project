@@ -15,3 +15,11 @@
 .iconsContainer i:hover {
   color: #e7064a !important;
 }
+
+/* @media screen and(max-width:600px){
+  .iconsContainer{
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  
+} */

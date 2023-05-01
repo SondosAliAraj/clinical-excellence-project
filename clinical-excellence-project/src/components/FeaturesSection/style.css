@@ -4,3 +4,13 @@
     align-items: center; */
     margin-top: 112px;
 }
+
+
+@media screen  and (max-width:600px){
+    .featureCardsContainer{
+        display: flex;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+}

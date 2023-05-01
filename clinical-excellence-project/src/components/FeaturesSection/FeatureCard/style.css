@@ -33,6 +33,7 @@
   text-align: center;
 
   margin-bottom: 20px;
+  margin-top: 35px;
 }
 
 .FeatureCardHeader {
@@ -66,13 +67,23 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
   margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .lineStyle {
   margin-bottom: 20px;
 }
 
+.featureCard {
+  cursor: pointer;
+  padding: 5%;
+  max-width: 18rem;
+  border-radius: 0px;
+}
 
-.featureCard{
-    cursor: pointer;
+@media screen and (max-width: 600px) {
+  .featureCard {
+    display: flex;
+    margin: auto;
+  }
 }

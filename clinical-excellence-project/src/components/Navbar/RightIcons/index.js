@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import SearchBox from "../../SearchBox";
+import SearchBox from "../../Common/SearchBox";
 
 const RightIcons = () => {
   return (

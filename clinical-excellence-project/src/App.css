@@ -17,3 +17,23 @@
 .navContainer {
   z-index: 1;
 }
+
+.heroSectionContainer {
+  position: relative;
+}
+
+.navbarAppContainer {
+  position: absolute;
+  top: 0%;
+  z-index: 9;
+  width: 100%;
+}
+
+@media screen  and (max-width:600px){
+  .navbarAppContainer {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+}

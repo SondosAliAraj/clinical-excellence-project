@@ -1,0 +1,25 @@
+.subHeader {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #ffffff;
+  /* width: 42%; */
+}
+
+@media screen and (max-width: 600px) {
+  .subHeader {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subHeader {
+    font-size: 18px;
+    text-align: center;
+  }
+}

@@ -1,6 +1,6 @@
 .outlineBtn {
   height: 55px;
-  /* width: 162px; */
+  /* width: 191px; */
   left: 201px;
   top: 0px;
   border-radius: 5px;
@@ -24,8 +24,8 @@
 
   /* light-text-color */
 
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  /* color: #ffffff; */
+  border: 1px solid;
   border-radius: 5px;
 
   /* Inside auto layout */

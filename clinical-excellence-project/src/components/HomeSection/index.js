@@ -3,7 +3,7 @@ import "./style.css";
 import Navbar from "../Navbar";
 import SectionHeader from "../Common/SectionHeader";
 import ButtonFill from "../Common/ButtonFill";
-import SectionSubHeader from "../SectionSubHeader";
+import SectionSubHeader from "../Common/SectionSubHeader";
 import OutlineButton from "../Common/OutlineButton";
 
 const HomeSection = () => {
@@ -17,7 +17,7 @@ const HomeSection = () => {
             className="coverImage img-fluid"
           />
           <div className="overlay">
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="container customContainer">
               <div className="row">
                 <div className="col-lg-12 align-items-flex-start">
@@ -28,8 +28,16 @@ const HomeSection = () => {
                     <SectionSubHeader subHeader="We know how large objects will act, but things on a small scale" />
                   </div>
                   <div className="mt-4 btnsContainer">
-                    <ButtonFill btnText="Get Quote Now" />
-                    <OutlineButton btnText="Learn More"/>
+                    <div className="btn1">
+                      <ButtonFill btnText="Get Quote Now" btnColor="#23a6f0" />
+                    </div>
+                    <div className="btn1">
+                      <OutlineButton
+                        btnText="Learn More"
+                        borderColor="#ffffff"
+                        textColor="#ffffff"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

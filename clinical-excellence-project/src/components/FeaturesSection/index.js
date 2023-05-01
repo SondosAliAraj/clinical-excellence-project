@@ -4,6 +4,7 @@ import FeatureCard from "./FeatureCard";
 
 const FeaturesSection = () => {
   const [data, setData] = useState([]);
+  const [selectedCard, setSelectedCard] = useState(null);
 
   useEffect(() => {
     fetch("https://64494fb9e7eb3378ca45df68.mockapi.io/posts")
@@ -12,6 +13,10 @@ const FeaturesSection = () => {
       .catch((error) => console.error(error));
   }, []);
 
+  const handleCardClick = (index) => {
+    setSelectedCard(index);
+  };
+
   console.log({ data });
   return (
     <>
@@ -19,8 +24,14 @@ const FeaturesSection = () => {
         <div className="container d-flex align-items-center featureCardsContainer">
           <div className="row">
             {data.map(({ id, title, description }) => (
-              <div className="col-md-3" key={id}>
-                <FeatureCard id={id} title={title} subtitle={description} />
+              <div className="col-md-3 g-6" key={id}>
+                <FeatureCard
+                  id={id}
+                  title={title}
+                  subtitle={description}
+                  isSelected={id === selectedCard}
+                  onClick={() => handleCardClick(id)}
+                />
               </div>
             ))}
           </div>

@@ -6,6 +6,9 @@ import NavNav from "./components/Common/NavNav";
 import FeaturesSection from "./components/FeaturesSection";
 import ResearchSection from "./components/ResearchSection";
 import ProductsSection from "./components/ProductsSection";
+import AdvantagesSection from "./components/AdvantagesSection";
+import LatestNewsSection from "./components/LatestNewsSection";
+import SimpleTabs from "./components/LatestNewsSection/SimpleTabs";
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
       <FeaturesSection />
       <ResearchSection />
       <ProductsSection />
+      <AdvantagesSection />
+      <LatestNewsSection />
     </div>
   );
 }

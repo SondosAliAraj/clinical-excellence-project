@@ -21,19 +21,21 @@ const FeaturesSection = () => {
   return (
     <>
       <section id="about">
-        <div className="container d-flex align-items-center featureCardsContainer">
-          <div className="row">
-            {data.map(({ id, title, description }) => (
-              <div className="col-md-3 g-6" key={id}>
-                <FeatureCard
-                  id={id}
-                  title={title}
-                  subtitle={description}
-                  isSelected={id === selectedCard}
-                  onClick={() => handleCardClick(id)}
-                />
-              </div>
-            ))}
+        <div className="container">
+          <div className="d-flex align-items-center featureCardsContainer">
+            <div className="row">
+              {data.map(({ id, title, description }) => (
+                <div className="col-md-3 g-6" key={id}>
+                  <FeatureCard
+                    id={id}
+                    title={title}
+                    subtitle={description}
+                    isSelected={id === selectedCard}
+                    onClick={() => handleCardClick(id)}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

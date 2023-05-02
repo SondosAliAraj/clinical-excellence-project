@@ -10,9 +10,11 @@
   font-family: Montserrat;
   src: url(../public/webfonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
-/* .App {
-  text-align: center;
-} */
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 .navContainer {
   z-index: 1;

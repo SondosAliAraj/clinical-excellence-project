@@ -7,17 +7,17 @@ const ProductCard = ({ id, productName, category, image, price }) => {
       <div class="card border-0 productCard">
         <div class="card-body">
           <a href="#" className="card-title d-block productCardName">
-            Cancer center
+            {productName}
           </a>
           <a href="#" className="card-title d-block productCardCategory">
-            Orthopedics
+            {category}
           </a>
           <img
-            src="../../assets/printed-summer-dress (4) 1.png"
+            src={image}
             className="productImage"
             alt="line"
           />
-          <h5 className="price">$6.48</h5>
+          <h5 className="price">${price}</h5>
         </div>
       </div>
     </>

@@ -66,3 +66,11 @@
   box-shadow: none;
   border: none;
 }
+
+@media screen and (max-width: 600px) {
+  .navbarToggleMenu {
+    position: relative;
+    z-index: 3;
+  }
+
+}

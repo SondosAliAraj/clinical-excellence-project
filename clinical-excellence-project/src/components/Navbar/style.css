@@ -44,9 +44,14 @@
     background-color: #252b42;
     padding-top: 0% !important;
     padding-bottom: 0% !important;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0;
+    z-index: 2; */
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;
+    /* position: relative; */
   }
   .navbarAppContainer {
     padding-top: 29px;

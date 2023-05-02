@@ -1,0 +1,81 @@
+.brandSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #292f36;
+  margin-right: 0% !important;
+}
+.brandTitle {
+  padding-left: 10px;
+
+  font-family: Oswald;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  /* margin-right: 137.5px; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandTitle:hover {
+  color: #e7064a !important;
+}
+
+.navbarContainerSmallScreen {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+@media screen and (max-width: 600px) {
+  .iconsContainer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .navbarContainer {
+    background-color: #252b42;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0;
+    z-index: 2; */
+  }
+  .navbarContainerSmallScreen {
+    padding: 0% !important;
+    /* position: relative; */
+  }
+  .navbarAppContainer {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background-color: #252b42;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iconsContainer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .navbarContainer {
+    background-color: #252b42;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+  }
+  .navbarContainerSmallScreen {
+    padding: 0% !important;
+  }
+  .navbarAppContainer {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    background-color: #252b42;
+  }
+}

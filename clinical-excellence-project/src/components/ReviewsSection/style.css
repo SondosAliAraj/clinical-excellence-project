@@ -1,0 +1,15 @@
+.backgroundStyle {
+  background-color: #eef9ff;
+}
+.reviewsContainer {
+  width: 100%;
+}
+.reviewLine{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.mobileLine{
+    display: flex;
+    margin: auto;
+    margin-top: 68px;
+}

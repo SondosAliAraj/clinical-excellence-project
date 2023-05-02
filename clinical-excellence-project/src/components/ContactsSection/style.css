@@ -1,0 +1,39 @@
+.footer {
+  background: #2a7cc7;
+  /* display: flex;
+  margin: auto; */
+}
+
+.columnContainer {
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+  /* gap: 10%; */
+  /* flex-direction: column; */
+}
+.copyRight {
+  text-align: center;
+  margin-top: 107px;
+}
+
+@media screen and (max-width: 600px) {
+  .columnContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .getInTouch {
+    margin-top: 50px;
+  }
+  .companyInfo {
+    margin-top: 30px;
+  }
+  .features {
+    margin-top: 30px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+  }
+}

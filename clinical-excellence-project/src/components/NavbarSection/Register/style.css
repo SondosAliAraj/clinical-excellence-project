@@ -1,0 +1,33 @@
+.loginRegister {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.personIcon {
+  /* width: 12px;
+  height: 12px;
+  display: block; */
+  padding-right: 5px;
+  color: #ffffff;
+}
+
+.RegisterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 30px; */
+}
+.personIcon:hover, .loginRegister:hover {
+  color: #e7064a !important;
+  /* font-weight: bold; */
+}
+
+@media screen and (max-width: 600px) {
+
+}

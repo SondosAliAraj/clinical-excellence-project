@@ -1,0 +1,28 @@
+.copyright {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.2px;
+
+  /* light-text-color */
+
+  color: #ffffff;
+
+}
+@media only screen and (max-width: 768px) {
+  .copyright {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

@@ -9,21 +9,23 @@ import ProductsSection from "./components/ProductsSection";
 import AdvantagesSection from "./components/AdvantagesSection";
 import LatestNewsSection from "./components/LatestNewsSection";
 import SimpleTabs from "./components/LatestNewsSection/SimpleTabs";
+import ReviewsSection from "./components/ReviewsSection";
+import FooterSection from "./components/FooterSection";
+import HomeNavSection from "./components/HomeNavSection";
+import ContactsSection from "./components/ContactsSection";
 
 function App() {
   return (
     <div className="App">
-      <div className="heroSectionContainer">
-        <div className="navbarAppContainer">
-          <Navbar />
-        </div>
-        <HomeSection />
-      </div>
+      <HomeNavSection />
       <FeaturesSection />
       <ResearchSection />
       <ProductsSection />
       <AdvantagesSection />
       <LatestNewsSection />
+      <ReviewsSection />
+      {/* <FooterSection /> */}
+      <ContactsSection />
     </div>
   );
 }

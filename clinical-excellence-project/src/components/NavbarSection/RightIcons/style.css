@@ -1,0 +1,25 @@
+.iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.iconsContainer i{
+    color: #ffffff;
+}
+
+.number{
+    color: #ffffff;
+}
+
+.iconsContainer i:hover {
+  color: #e7064a !important;
+}
+
+/* @media screen and(max-width:600px){
+  .iconsContainer{
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  
+} */

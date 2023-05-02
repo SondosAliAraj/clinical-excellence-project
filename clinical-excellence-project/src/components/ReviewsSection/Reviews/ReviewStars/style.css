@@ -1,0 +1,15 @@
+.starsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.starsContainer .star {
+  color: #ffc107 !important;
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+}
+
+/* .active {
+  color: #ffd700;
+} */

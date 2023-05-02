@@ -1,0 +1,187 @@
+.copyright {
+  font-family: navbarFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.01em;
+
+  color: #4d5053;
+  padding-bottom: 43px;
+}
+@media only screen and (max-width: 768px) {
+  .Line {
+    display: none;
+  }
+  .copyright {
+    font-size: 18px;
+  }
+  .serachIconForSmallScreen {
+    padding-left: 0% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .brandTitle {
+    font-size: 2rem;
+  }
+  .home-bg-pic {
+    height: 63%;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .home-header {
+    font-size: 1.8125rem;
+    margin-top: -13%;
+  }
+  .homeTitles {
+    left: 0%;
+    top: 23%;
+  }
+  .home-subtitle {
+    font-size: 1.3125rem;
+    height: 84px;
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 6%;
+  }
+  .getStarted-btn {
+    margin-left: 10%;
+    font-size: 1rem;
+    width: 63%;
+    margin-top: 4%;
+    margin-left: 17%;
+  }
+  .services_subTitle br {
+    display: none;
+  }
+  .servicesHeader {
+    font-size: 1.5rem;
+    margin-left: 9%;
+    line-height: 1.5;
+  }
+  .contact_no h4,
+  .contact_no p {
+    font-size: 17px;
+    line-height: 114%;
+  }
+  .callSection {
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .phone {
+    left: 31%;
+    top: 22%;
+  }
+  .ellipse {
+    width: 72%;
+  }
+  .services_subTitle {
+    line-height: 160%;
+  }
+  .services-btn {
+    width: 229px;
+    font-size: 14px;
+  }
+  .projectsSubtitle br {
+    display: none;
+  }
+  .projectsContainer h1 {
+    font-size: 1.5rem;
+  }
+  .projectCard {
+    width: 20rem;
+  }
+  .cardContent h4 {
+    font-size: 1.125rem;
+  }
+  .cardContent p {
+    font-size: 1rem;
+  }
+  .cardSubtitle {
+    padding-bottom: 10px !important;
+  }
+  .paddingBottomZero {
+    padding-bottom: 0 !important;
+  }
+  .cardContent {
+    margin-bottom: 10%;
+    gap: 25%;
+  }
+  .pagesContainer p {
+    font-size: 1.29rem;
+  }
+  .pagesContainer h5 {
+    color: #cda274;
+    border-bottom: solid 1px lightgrey;
+  }
+  .statistics h1 {
+    font-size: 4rem;
+    line-height: 67px;
+  }
+  .statistics div p {
+    font-size: 1rem;
+  }
+  .blogContainer h1 {
+    font-size: 1.5rem;
+  }
+  .Line {
+    display: none;
+  }
+  .blogCardContainer {
+    margin-top: -61px;
+  }
+  .blogContainer p {
+    font-size: 1.375rem;
+  }
+  .blogContainer > p > br {
+    display: none;
+  }
+  /* .blogCard {
+    width: 21rem;
+  } */
+  .cardTag {
+    left: 12%;
+    top: 47%;
+  }
+  .smallScreenContact {
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 13%;
+    justify-items: center;
+  }
+  .smallBtn,
+  .servicesSmallBtn {
+    font-size: 1.2rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  .projectsSubtitle {
+    padding-top: 0px !important;
+  }
+  .contactAdsress {
+    width: inherit;
+  }
+  .blogCardTitle {
+    font-size: 1.5rem;
+  }
+  .ellipseArrow {
+    width: 60px;
+    height: 60px;
+    margin-top: 4%;
+  }
+
+}

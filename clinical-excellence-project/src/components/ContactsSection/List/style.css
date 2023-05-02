@@ -1,0 +1,36 @@
+.ListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+}
+.ListContainer h5 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  letter-spacing: 0.1px;
+
+  /* light-text-color */
+
+  color: #ffffff;
+}
+.ListContainer p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  letter-spacing: 0.2px;
+
+  /* disabled-element-text-color */
+
+  color: #8ec2f2;
+  cursor: pointer;
+}

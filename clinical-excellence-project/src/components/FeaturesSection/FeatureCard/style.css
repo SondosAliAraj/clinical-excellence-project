@@ -77,8 +77,9 @@
 .featureCard {
   cursor: pointer;
   padding: 5%;
-  max-width: 18rem;
+  /* max-width: 18rem; */
   border-radius: 0px;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

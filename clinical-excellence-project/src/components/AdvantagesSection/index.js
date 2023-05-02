@@ -27,16 +27,32 @@ const AdvantagesSection = () => {
               <div className="col-md-6 postsCardsContainer">
                 <div className="row ">
                   <div className="col-md-6 col-sm-12">
-                    <PostCard />
+                    <PostCard
+                      title="Work at the speed"
+                      subtitle="The gradual accumulation of information about "
+                      btnText="LearnMore"
+                    />
                   </div>
                   <div className="col-md-6 col-sm-12">
-                    <PostCard />
+                    <PostCard
+                      title="Work at the speed"
+                      subtitle="The gradual accumulation of information about "
+                      btnText="LearnMore"
+                    />
                   </div>
                   <div className="col-md-6 col-sm-12">
-                    <PostCard />
+                    <PostCard
+                      title="Work at the speed"
+                      subtitle="The gradual accumulation of information about "
+                      
+                    />
                   </div>
                   <div className="col-md-6 col-sm-12">
-                    <PostCard />
+                    <PostCard
+                      title="Work at the speed"
+                      subtitle="The gradual accumulation of information about "
+                      
+                    />
                   </div>
                 </div>
               </div>

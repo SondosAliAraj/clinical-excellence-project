@@ -1,5 +1,5 @@
 .productCard {
-  width: fit-content;
+  /* width: fit-content; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -56,8 +56,9 @@
 }
 
 .productImage {
-  width: 197px;
-  height: 206px;
+  /* width: 197px;
+  height: 206px; */
+  width: 100%;
 
   /* Inside auto layout */
 

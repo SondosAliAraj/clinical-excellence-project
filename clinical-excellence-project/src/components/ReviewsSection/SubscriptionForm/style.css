@@ -1,0 +1,91 @@
+.subscriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+  margin-top: 89.5px;
+  margin-bottom: 89.5px;
+}
+.subscriptionContainer p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* disabled-element-text-color */
+}
+.blueText {
+  color: #8ec2f2;
+}
+.greyText {
+  color: #737373;
+  margin-top: 25px;
+}
+
+.subscriptionContainer h3 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  text-align: center;
+  letter-spacing: 0.1px;
+
+  /* text-color */
+
+  color: #252b42;
+}
+.emailInputContainer input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.2px;
+
+  /* second-text-color */
+
+  color: #737373;
+
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  height: 40px;
+}
+.subscribrBtn {
+  box-sizing: border-box;
+
+  /* primary-color */
+
+  background: #23a6f0;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* light-text-color */
+
+  color: #ffffff;
+  height: 40px;
+}
+.emailInputContainer {
+  display: flex;
+  align-items: center;
+}

@@ -107,8 +107,9 @@
   margin-top: 12%;
 }
 .researchImage {
-  width: 512.6px;
-  height: 498px;
+  /* width: 512.6px;
+  height: 498px; */
+  width: 100%;
 
   /* Inside auto layout */
 

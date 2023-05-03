@@ -10,15 +10,16 @@ const Navbar = () => {
   return (
     <>
       <nav className=" navbar navbar-expand-lg  sticky-xl-top   navbarContainerSmallScreen">
-        <div className="container navbarContainer order-first">
+        <div
+          className="container navbarContainer"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
           <a href="#home" className="navbar-brand brandSection">
             <h3 className="brandTitle ">MEDSONO</h3>
           </a>
-          <div className="iconsContainer">
-            <NavbarItem />
-            <Register />
-            <RightIcons />
-          </div>
+          <Register />
+          <RightIcons />
+          <NavbarItem />
         </div>
       </nav>
     </>

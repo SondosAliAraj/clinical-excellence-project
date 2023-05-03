@@ -26,36 +26,7 @@ const ProductsSection = () => {
               </div>
             </div>
           </div>
-          {/* <div className="rowProductContainer d-none d-md-block">
-            <div className="row">
-              {data.map(({ id, name, category, image, price }) => (
-                <div className="col-md-3 columnCard">
-                  <ProductCard
-                    productName={name}
-                    category={category}
-                    image={image}
-                    price={price}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="d-block d-md-none">
-              <Carousel>
-                <div className="carousel-inner">
-                  {data.map(({ id, name, category, image, price }) => (
-                    <Carousel.Item key={id}>
-                      <ProductCard
-                        productName={name}
-                        category={category}
-                        image={image}
-                        price={price}
-                      />
-                    </Carousel.Item>
-                  ))}
-                </div>
-              </Carousel>
-            </div> 
-          </div>*/}
+
           <div className="d-md-block d-none">
             <div className="row">
               {data.map(({ id, name, category, image, price }) => (

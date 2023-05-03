@@ -1,0 +1,45 @@
+
+.cartContainer{
+    min-width: 15rem;
+    padding: 15px;
+    
+}
+.count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #23a6f0;
+  display: flex;
+  justify-content: center;
+  font-family: Raleway;
+  margin-bottom: 10px;
+}
+
+.cartContainer p{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 900;
+    color:rgb(86, 86, 86)
+}
+
+.cartHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(164, 164, 164);
+}
+.cartIconWCount {
+  display: flex;
+  flex-direction: row;
+}
+.total{
+    color: rgb(54, 53, 53);
+    font-family: Raleway;
+
+}
+.totalPurchase{
+    color:#23A6F0;
+    font-family: Raleway;
+    font-weight: 400;
+}

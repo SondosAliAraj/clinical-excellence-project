@@ -5,24 +5,6 @@ import { Dropdown } from "react-bootstrap";
 const NavbarItem = () => {
   return (
     <>
-      {/* <svg
-        width="1em"
-        height="1em"
-        viewBox="0 0 16 16"
-        class="bi bi-menu-button-wide"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M1 2.5A1.5 1.5 0 0 1 2.5 1h11A1.5 1.5 0 0 1 15 2.5v0A1.5 1.5 0 0 1 13.5 4h-11A1.5 1.5 0 0 1 1 2.5zM2.5 5A1.5 1.5 0 0 1 1 6.5v0A1.5 1.5 0 0 1 2.5 8h11A1.5 1.5 0 0 1 15 6.5v0A1.5 1.5 0 0 1 13.5 5h-11z"
-        />
-        <path
-          fill-rule="evenodd"
-          d="M1 9.5A1.5 1.5 0 0 1 2.5 8h11A1.5 1.5 0 0 1 15 9.5v0A1.5 1.5 0 0 1 13.5 11h-11A1.5 1.5 0 0 1 1 9.5zM2.5 12A1.5 1.5 0 0 1 1 10.5v0A1.5 1.5 0 0 1 2.5 9h11A1.5 1.5 0 0 1 15 10.5v0A1.5 1.5 0 0 1 13.5 12h-11z"
-        />
-      </svg> */}
-
       {/* toggle burger menu */}
       <div className="navbarContainer">
         <button

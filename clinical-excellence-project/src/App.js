@@ -13,6 +13,8 @@ import ReviewsSection from "./components/ReviewsSection";
 import FooterSection from "./components/FooterSection";
 import HomeNavSection from "./components/HomeNavSection";
 import ContactsSection from "./components/ContactsSection";
+import Cart from "./components/Cart";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -24,7 +26,6 @@ function App() {
       <AdvantagesSection />
       <LatestNewsSection />
       <ReviewsSection />
-      {/* <FooterSection /> */}
       <ContactsSection />
     </div>
   );

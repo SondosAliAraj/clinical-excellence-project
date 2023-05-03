@@ -20,6 +20,10 @@
 .navbar-brand {
   /* margin-right: 137.5px; */
 }
+.navbarContainer {
+  display: flex;
+  justify-content: space-around;
+}
 
 .container {
   display: flex;
@@ -43,11 +47,8 @@
   .navbarContainer {
     background-color: #252b42;
     padding-top: 0% !important;
-    padding-bottom: 0% !important;
-    /* position: absolute; */
-    /* top: 0;
-    right: 0;
-    z-index: 2; */
+    display: flex;
+    justify-content: inherit;
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;
@@ -74,8 +75,8 @@
     padding: 0% !important;
   }
   .navbarAppContainer {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    /* padding-top: 29px;
+    padding-bottom: 29px; */
     background-color: #252b42;
   }
 }

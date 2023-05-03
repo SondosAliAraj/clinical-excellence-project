@@ -65,12 +65,12 @@
   gap: 5px;
 }
 
-@media screen and (max-width:600px) {
-    .blogCard{
-        width: 100%;
-
-    }
-    .cardImageContainer{
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .blogCard {
+    width: 100%;
+  }
+  .cardImageContainer {
+    width: 100%;
+  }
+  
 }

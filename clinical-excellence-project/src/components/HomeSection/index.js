@@ -14,7 +14,12 @@ const HomeSection = () => {
           <img
             src="../../../assets/hero-2-bg-shape-cover-dark.png"
             alt="cover image"
-            className="coverImage img-fluid"
+            className="coverImage img-fluid d-md-block d-none"
+          />
+          <img
+            src="../../../assets/hero-1-bg-shape-cover.png"
+            alt="cover image"
+            className="coverImage img-fluid d-block d-md-none"
           />
           <div className="overlay">
             {/* <Navbar /> */}
@@ -24,10 +29,10 @@ const HomeSection = () => {
                   <div>
                     <SectionHeader header="Clinical Excellence" />
                   </div>
-                  <div className="mt-4">
+                  <div className="mt-4 homeSubheader">
                     <SectionSubHeader subHeader="We know how large objects will act, but things on a small scale" />
                   </div>
-                  <div className="mt-4 btnsContainer">
+                  <div className=" btnsContainer">
                     <div className="btn1">
                       <ButtonFill btnText="Get Quote Now" btnColor="#23a6f0" />
                     </div>

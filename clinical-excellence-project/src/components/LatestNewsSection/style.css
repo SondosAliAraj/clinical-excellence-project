@@ -66,3 +66,22 @@
     padding: 30px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .blogHeading {
+    width: 65%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+  .blogDescription {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .latestNewsContainer {
+    padding: 30px;
+  }
+}

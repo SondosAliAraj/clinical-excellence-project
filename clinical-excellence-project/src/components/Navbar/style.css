@@ -39,8 +39,28 @@
   padding-bottom: 29px;
 }
 
+.navbar-toggler-icon {
+  background-image: url("../../../public/assets/Vector.svg"); /* replace "path/to/your/custom/icon.svg" with the path to your custom icon file */
+  width: 1em; /* set the width and height to match the size of your icon */
+  height: 1em;
+  background-repeat: no-repeat; /* prevent the icon from repeating */
+  background-size: contain; /* scale the icon to fit the button */
+  background-position: center; /* center the icon within the button */
+  /*border: none;  remove the border */
+  border-style: none; /* remove the border */
+}
+.navbar-toggler {
+  border-style: none; /* remove the border */
+}
+
 @media screen and (max-width: 600px) {
   .iconsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .classReverse{
+        display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
@@ -52,6 +72,7 @@
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;
+    flex-direction: column;
     /* position: relative; */
   }
   .navbarAppContainer {
@@ -66,6 +87,11 @@
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
+    .classReverse{
+        display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
   .navbarContainer {
     background-color: #252b42;
     padding-top: 0% !important;
@@ -73,6 +99,7 @@
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;
+    flex-direction: column;
   }
   .navbarAppContainer {
     /* padding-top: 29px;

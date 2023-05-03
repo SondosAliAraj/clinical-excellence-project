@@ -7,7 +7,7 @@ const NavbarItem = () => {
     <>
       {/* toggle burger menu */}
       <div className="navbarContainer">
-        <button
+        {/* <button
           class="navbar-toggler navbarToggleMenu"
           type="button"
           data-bs-toggle="collapse"
@@ -17,7 +17,7 @@ const NavbarItem = () => {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         {/* navbar items  */}
         <div
           class="collapse navbar-collapse justify-content-end navbarItemContainer"

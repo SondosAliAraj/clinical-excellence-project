@@ -141,3 +141,29 @@
     display: contents;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .sectionTitle1 {
+    text-align: center;
+  }
+  .sectionTitle2 {
+    text-align: center;
+  }
+  .mainContent {
+    display: flex;
+    margin: auto;
+  }
+  .shopContainer {
+    margin-top: 33%;
+  }
+  /* .carouselContainer{
+    display: block;
+  }
+  .rowProductContainer{
+    display: none;
+  } */
+  .rowContainer {
+    display: contents;
+  }
+}

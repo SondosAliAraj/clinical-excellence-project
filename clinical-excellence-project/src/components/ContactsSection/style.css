@@ -4,6 +4,43 @@
   margin: auto; */
 }
 
+.getInTouch {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+}
+.getInTouch h5 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  letter-spacing: 0.1px;
+
+  /* light-text-color */
+
+  color: #ffffff;
+}
+
+.getInTouch p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  letter-spacing: 0.2px;
+
+  /* disabled-element-text-color */
+
+  color: #8ec2f2;
+}
+
 .columnContainer {
   display: flex;
   margin-top: 8%;
@@ -17,6 +54,28 @@
 }
 
 @media screen and (max-width: 600px) {
+  .columnContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .getInTouch {
+    margin-top: 50px;
+  }
+  .companyInfo {
+    margin-top: 30px;
+  }
+  .features {
+    margin-top: 30px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .columnContainer {
     flex-direction: column;
     justify-content: center;

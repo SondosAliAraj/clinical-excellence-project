@@ -140,3 +140,53 @@
     margin: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .heading6 {
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    width: 145px;
+    height: 24px;
+    margin-bottom: 10px;
+  }
+  .heading2 {
+    display: flex;
+    margin: auto;
+    font-size: 26px;
+    text-align: center;
+    width: 239px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .description {
+    display: flex;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    width: 261px;
+    height: 80px;
+    margin-bottom: 80px;
+  }
+  .advantagesSectionImage {
+    width: 289px;
+    height: 322.22px;
+    display: flex;
+    margin: auto;
+  }
+  .postsCardsContainer {
+    display: flex;
+    margin: auto;
+  }
+  .cardsInSmallScreen {
+    display: flex;
+    margin: auto;
+  }
+
+  .bodyRow {
+    margin: auto;
+  }
+  .postsCardsContainer .row {
+    margin: auto;
+  }
+}

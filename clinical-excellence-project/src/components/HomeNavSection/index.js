@@ -7,9 +7,9 @@ const HomeNavSection = () => {
   return (
     <>
       <div className="heroSectionContainer">
-        <div className="navbarAppContainer">
-          {/* <Navbar /> */}
-        </div>
+        {/* <div className="navbarAppContainer">
+          <Navbar />
+        </div> */}
         <HomeSection />
       </div>
     </>

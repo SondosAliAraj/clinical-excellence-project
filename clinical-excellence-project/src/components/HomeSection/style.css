@@ -87,7 +87,7 @@
     height: 575px;
   }
   .customContainer {
-    top: 18%;
+    top: 4%;
     left: 0%;
   }
   .btnsContainer {
@@ -99,16 +99,15 @@
     margin: auto;
     margin-bottom: 5%;
   }
-  .homeSubheader{
+  .homeSubheader {
     display: flex;
     justify-content: center;
   }
- 
 }
 
 @media screen and (max-width: 768px) {
   .customContainer {
-    top: 18%;
+    top: 4%;
     left: 0%;
   }
   .btnsContainer {

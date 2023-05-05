@@ -21,9 +21,6 @@
   /* margin-right: 137.5px; */
 }
 .navbarContainer {
-  display: flex;
-  justify-content: space-around;
-  
 }
 
 .container {
@@ -60,16 +57,20 @@
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
-  .classReverse{
-        display: flex;
+  .classReverse {
+    display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
   .navbarContainer {
     background-color: #252b42;
-    padding-top: 0% !important;
     display: flex;
     justify-content: inherit;
+
+    /* justify-content: space-around; */
+
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;
@@ -88,15 +89,15 @@
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
-    .classReverse{
-        display: flex;
+  .classReverse {
+    display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
   .navbarContainer {
     background-color: #252b42;
-    padding-top: 0% !important;
-    padding-bottom: 0% !important;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
   .navbarContainerSmallScreen {
     padding: 0% !important;

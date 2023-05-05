@@ -90,6 +90,15 @@
   flex-grow: 0;
 }
 
+.addToCartContainer{
+  justify-content: space-between;
+}
+.addToCartBtn{
+  cursor: pointer;
+}
+.addToCartBtn:hover{
+  color: #2dc071;
+}
 @media screen and (max-width:600px){
   .productCard{
     margin: auto;

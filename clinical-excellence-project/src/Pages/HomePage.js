@@ -1,4 +1,3 @@
-
 import FeaturesSection from "../components/FeaturesSection";
 import ResearchSection from "../components/ResearchSection";
 import ProductsSection from "../components/ProductsSection";
@@ -7,10 +6,11 @@ import LatestNewsSection from "../components/LatestNewsSection";
 import ReviewsSection from "../components/ReviewsSection";
 import HomeNavSection from "../components/HomeNavSection";
 import ContactsSection from "../components/ContactsSection";
+import { CartProvider } from "../context/CartContext";
 
 function HomePage() {
   return (
-    <div className="App">
+    <>
       <HomeNavSection />
       <FeaturesSection />
       <ResearchSection />
@@ -19,7 +19,7 @@ function HomePage() {
       <LatestNewsSection />
       <ReviewsSection />
       <ContactsSection />
-    </div>
+    </>
   );
 }
 

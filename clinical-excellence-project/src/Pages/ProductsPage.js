@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import UserList from "../UserList";
 import ProductsPageHeader from "../components/ProductsPageHeader";
 import ProductsTable from "../components/ProductsTable";
 

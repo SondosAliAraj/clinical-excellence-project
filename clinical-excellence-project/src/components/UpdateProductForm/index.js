@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const UpdateProductForm = ({ id, productInfo, onUpdate }) => {
+const UpdateProductForm = ({ id, productInfo, onUpdate, onClose }) => {
   const [name, setName] = useState(productInfo.name);
   const [image, setImage] = useState(productInfo.image);
   const [category, setCategory] = useState(productInfo.category);
@@ -28,6 +28,7 @@ const UpdateProductForm = ({ id, productInfo, onUpdate }) => {
         console.log(data);
         onUpdate(data); // call the onUpdate callback with the updated data
       })
+      .then(onClose())
       .catch((error) => console.error(error));
   };
 
@@ -41,20 +42,22 @@ const UpdateProductForm = ({ id, productInfo, onUpdate }) => {
           onChange={(event) => setName(event.target.value)}
         />
       </div>
+
       <div className="form-group">
         <input
           type="text"
-          className="form-control"
-          value={image}
-          onChange={(event) => setImage(event.target.value)}
+          className="form-control "
+          value={category}
+          onChange={(event) => setCategory(event.target.value)}
         />
       </div>
       <div className="form-group">
+        <label htmlFor="image">image:</label>
         <input
-          type="text"
-          className="form-control my-3"
-          value={category}
-          onChange={(event) => setCategory(event.target.value)}
+          type="file"
+          className="form-control-file my-3"
+          id="image"
+          onChange={(event) => setImage(event.target.value)}
         />
       </div>
       <div className="form-group">
@@ -65,7 +68,7 @@ const UpdateProductForm = ({ id, productInfo, onUpdate }) => {
           onChange={(event) => setPrice(event.target.value)}
         />
       </div>
-      <button type="submit" className="btn btn-primary mt-3">
+      <button type="submit" className="btn btn-primary my-3">
         Save
       </button>
     </form>

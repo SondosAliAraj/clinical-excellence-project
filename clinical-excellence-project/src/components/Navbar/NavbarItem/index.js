@@ -7,25 +7,13 @@ const NavbarItem = () => {
     <>
       {/* toggle burger menu */}
       <div className="navbarContainer">
-        {/* <button
-          class="navbar-toggler navbarToggleMenu"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> */}
-        {/* navbar items  */}
         <div
           class="collapse navbar-collapse justify-content-end navbarItemContainer"
           id="main-nav"
         >
           <ul class="navbar-nav itemsText">
             <li class="nav-item">
-              <a href="#home" class="nav-link pe-4 navbarItem">
+              <a href="/" class="nav-link pe-4 navbarItem">
                 Home
               </a>
             </li>
@@ -43,11 +31,11 @@ const NavbarItem = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#shop">Cancer center</Dropdown.Item>
-                  <Dropdown.Item href="#shop">Outpatient care</Dropdown.Item>
-                  <Dropdown.Item href="#shop">Neurosurgery</Dropdown.Item>
-                  <Dropdown.Item href="#shop">Women's health</Dropdown.Item>
-                  <Dropdown.Item href="#shop">Prenatal care</Dropdown.Item>
+                  <Dropdown.Item href="/products">Cancer center</Dropdown.Item>
+                  <Dropdown.Item href="/products">Outpatient care</Dropdown.Item>
+                  <Dropdown.Item href="/products">Neurosurgery</Dropdown.Item>
+                  <Dropdown.Item href="/products">Women's health</Dropdown.Item>
+                  <Dropdown.Item href="/products">Prenatal care</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </li>

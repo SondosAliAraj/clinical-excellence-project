@@ -9,12 +9,12 @@ import RightIcons from "./RightIcons";
 const Navbar = () => {
   return (
     <>
-      <nav className=" navbar navbar-expand-lg  sticky-xl-top   navbarContainerSmallScreen">
+      <nav className=" navbar navbar-expand-lg  sticky-lg-top   navbarContainerSmallScreen" style={{backgroundColor:"#6791b8"}}>
         <div
           className="container navbarContainer"
           style={{ display: "flex", justifyContent: "space-around" }}
         >
-          <a href="#home" className="navbar-brand brandSection">
+          <a href="/" className="navbar-brand brandSection">
             <h3 className="brandTitle ">MEDSONO</h3>
           </a>
           <div className="d-md-block d-none">

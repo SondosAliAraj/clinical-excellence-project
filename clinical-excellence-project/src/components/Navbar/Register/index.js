@@ -6,7 +6,7 @@ const Register = () => {
       <>
         <div className="RegisterContainer d-none d-lg-inline">
           <i class="bi bi-person  personIcon"></i>
-          <a  href="#login_register" className='loginRegister'>Login / Register</a>
+          <a  href="/products" className='loginRegister'>Login / Register</a>
         </div>
       </>
     );

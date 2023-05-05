@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 const AddProductForm = ({ addProduct }) => {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
@@ -40,6 +38,11 @@ const AddProductForm = ({ addProduct }) => {
     })
       .then((response) => response.json())
       .then((data) => console.log(data))
+      .then((response) => {
+        if (response.ok) {
+          window.location.reload(); // refresh the page
+        }
+      })
       .catch((error) => console.error(error));
   };
 

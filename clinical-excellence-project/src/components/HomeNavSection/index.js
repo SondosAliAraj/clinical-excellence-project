@@ -8,7 +8,7 @@ const HomeNavSection = () => {
     <>
       <div className="heroSectionContainer">
         <div className="navbarAppContainer">
-          <Navbar />
+          {/* <Navbar /> */}
         </div>
         <HomeSection />
       </div>

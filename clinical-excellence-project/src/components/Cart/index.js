@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { CartContext } from "../../context/CartContext";
 
 const Cart = () => {
-  const { cartItems} = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
 
   const generateCartContent = () => {
     let total = cartItems.reduce(
@@ -13,8 +13,8 @@ const Cart = () => {
     let content = "";
     cartItems.forEach((product, index) => {
       content += `
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <img src="${product.image}" alt="${product.name}" width="50">
+        <div style="display: flex; align-items: center;text-align:left; gap: 10px;">
+          <img src="${product.image}" alt="${product.name}" width="100">
           <div>
             <h3 style="font-family: Raleway; font-size:24px" >${
               product.name

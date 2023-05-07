@@ -51,7 +51,7 @@ const ProductsTable = () => {
       html: `
       <img src="${product.image}" alt="${product.name}" width="200">
       <p><strong>Category:</strong> ${product.category}</p>
-      <p><strong>Price:</strong> ${product.price}</p>
+      <p><strong>Price:</strong> $${product.price}</p>
     `,
       confirmButtonText: "Close",
     });
@@ -90,22 +90,22 @@ const ProductsTable = () => {
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className="container">
-          <div className="row">
-            <div className="col-md-9">
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-9">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Image</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              {loading ? (
+                <Loader />
+              ) : (
                 <tbody>
                   {products.map((product) => (
                     <tr key={product.id}>
@@ -147,14 +147,14 @@ const ProductsTable = () => {
                     </tr>
                   ))}
                 </tbody>
-              </table>
-            </div>
-            <div className="col-md-3">
-              <AddProductForm addProduct={addProduct} />
-            </div>
+              )}
+            </table>
+          </div>
+          <div className="col-md-3">
+            <AddProductForm addProduct={addProduct} />
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 };

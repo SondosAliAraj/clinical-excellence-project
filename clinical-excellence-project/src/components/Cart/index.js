@@ -6,6 +6,13 @@ const Cart = () => {
   const { cartItems } = useContext(CartContext);
 
   const generateCartContent = () => {
+    if (cartItems.length === 0) {
+      return `
+        <img src="./assets/emptyCart.png" alt="empty cart" width="50%">
+        <p>Oops,Your cart is empty!</p>
+      `;
+    }
+
     let total = cartItems.reduce(
       (sum, product) => sum + Number(product.price),
       0
@@ -27,6 +34,7 @@ const Cart = () => {
         <hr>
       `;
     });
+
     content += `
       <div style="text-align: right">
         <p style="font-family: Raleway; font-size:18px; font-weight:bold">Total: $${total.toFixed(
@@ -34,6 +42,7 @@ const Cart = () => {
         )}</p>
       </div>
     `;
+
     return content;
   };
 
@@ -59,6 +68,7 @@ const Cart = () => {
 
   return (
     <>
+      <div className="cart-content"></div>
       <span className="dropdown-toggle" onClick={showCartPopup}>
         <div className="cartIconWCount">
           <i className="bi bi-cart"></i>

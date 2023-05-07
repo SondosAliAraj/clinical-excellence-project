@@ -52,11 +52,20 @@ const UpdateProductForm = ({ id, productInfo, onUpdate, onClose }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="image">image:</label>
         <input
           type="file"
           className="form-control-file my-3"
+          //   id="image"
+          //   onChange={(event) => setImage(event.target.value)}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="image">Image (for test purpose):</label>
+        <input
+          type="text"
+          className="form-control-file my-3"
           id="image"
+          value={image}
           onChange={(event) => setImage(event.target.value)}
         />
       </div>

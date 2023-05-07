@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 
 const AddProductForm = ({ addProduct }) => {
   const [name, setName] = useState("");
@@ -47,55 +48,70 @@ const AddProductForm = ({ addProduct }) => {
   };
 
   return (
-    <div className="container ms-5 flex-column">
-      <h4 className="font-weight-bold">Add Product</h4>
-      <form onSubmit={handleSubmit} style={{ padding: "10px" }}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            className="form-control"
-            id="name"
-            name="name"
-            value={name}
-            onChange={handleNameChange}
-          />
+    <div className="container mt-3">
+      <div className="row">
+        <div className="col-md-6 mx-auto w-100">
+          <h4 className="font-weight-bold text-center mb-4">Add Product</h4>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                name="name"
+                value={name}
+                onChange={handleNameChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="category">Category:</label>
+              <input
+                type="text"
+                className="form-control"
+                id="category"
+                name="category"
+                value={category}
+                onChange={handleCategoryChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="price">Price:</label>
+              <input
+                type="number"
+                className="form-control"
+                id="price"
+                name="price"
+                value={price}
+                onChange={handlePriceChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="image">Image:</label>
+              <input
+                type="file"
+                className="form-control-file my-3"
+                id="image"
+                onChange={handleImageChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="image">Image (for test purpose):</label>
+              <input
+                type="text"
+                className="form-control-file my-3"
+                id="image"
+                onChange={(event) => setImage(event.target.value)}
+              />
+            </div>
+            <div className="text-center">
+              <button type="submit" className="btn btn-primary my-3 ">
+                Add
+              </button>
+            </div>
+          </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="category">Category:</label>
-          <input
-            type="text"
-            className="form-control"
-            id="category"
-            name="category"
-            value={category}
-            onChange={handleCategoryChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="price">Price:</label>
-          <input
-            type="number"
-            className="form-control"
-            id="price"
-            name="price"
-            value={price}
-            onChange={handlePriceChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="image">image:</label>
-          <input
-            type="file"
-            className="form-control-file"
-            id="image"
-            onChange={handleImageChange}
-          />
-        </div>
-        <button type="submit" className="btn btn-primary mt-3">
-          Add
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

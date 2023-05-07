@@ -91,64 +91,66 @@ const ProductsTable = () => {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row w-100">
           <div className="col-md-9">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Image</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              {loading ? (
-                <Loader />
-              ) : (
-                <tbody>
-                  {products.map((product) => (
-                    <tr key={product.id}>
-                      <td>{product.name}</td>
-                      <td>
-                        <img src={product.image} style={{ width: "30%" }} />
-                      </td>
-                      <td>{product.category}</td>
-                      <td>${product.price}</td>
-                      <td>
-                        <button
-                          className="btn btn-primary"
-                          onClick={() => handlePreview(product)}
-                        >
-                          <i class="bi bi-table"></i>
-                        </button>
-                        <button
-                          className="btn btn-success mx-2"
-                          onClick={() => toggleForm(product.id)}
-                        >
-                          <i class="bi bi-pencil-square"></i>
-                        </button>
+            <div className="table-responsive w-100">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                {loading ? (
+                  <Loader />
+                ) : (
+                  <tbody>
+                    {products.map((product) => (
+                      <tr key={product.id}>
+                        <td>{product.name}</td>
+                        <td>
+                          <img src={product.image} style={{ width: "30%" }} />
+                        </td>
+                        <td>{product.category}</td>
+                        <td>${product.price}</td>
+                        <td>
+                          <button
+                            className="btn btn-primary"
+                            onClick={() => handlePreview(product)}
+                          >
+                            <i class="bi bi-table"></i>
+                          </button>
+                          <button
+                            className="btn btn-success mx-2"
+                            onClick={() => toggleForm(product.id)}
+                          >
+                            <i class="bi bi-pencil-square"></i>
+                          </button>
 
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleDelete(product.id)}
-                        >
-                          <i class="bi bi-trash3-fill"></i>
-                        </button>
-                        {showForm && selectedProductId === product.id && (
-                          <UpdateProductForm
-                            id={product.id}
-                            productInfo={product}
-                            onUpdate={handleUpdate}
-                            onClose={toggleForm}
-                          />
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              )}
-            </table>
+                          <button
+                            className="btn btn-danger"
+                            onClick={() => handleDelete(product.id)}
+                          >
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                          {showForm && selectedProductId === product.id && (
+                            <UpdateProductForm
+                              id={product.id}
+                              productInfo={product}
+                              onUpdate={handleUpdate}
+                              onClose={toggleForm}
+                            />
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                )}
+              </table>
+            </div>
           </div>
           <div className="col-md-3">
             <AddProductForm addProduct={addProduct} />

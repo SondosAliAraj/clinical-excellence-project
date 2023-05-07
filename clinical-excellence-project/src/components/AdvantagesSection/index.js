@@ -1,6 +1,30 @@
 import React from "react";
 import "./style.css";
 import PostCard from "./PostCard";
+
+const advantages = [
+  {
+    title: "Work at the speed",
+    subtitle: "The gradual accumulation of information about",
+    btnText: "Learn More",
+  },
+  {
+    title: "Work at the speed",
+    subtitle: "The gradual accumulation of information about",
+    btnText: "Learn More",
+  },
+  {
+    title: "Work at the speed",
+    subtitle: "The gradual accumulation of information about",
+    btnText: "",
+  },
+  {
+    title: "Work at the speed",
+    subtitle: "The gradual accumulation of information about",
+    btnText: "",
+  },
+];
+
 const AdvantagesSection = () => {
   return (
     <>
@@ -26,34 +50,17 @@ const AdvantagesSection = () => {
 
               <div className="col-md-6 postsCardsContainer">
                 <div className="row ">
-                  <div className="col-md-6 col-sm-12">
-                    <PostCard
-                      title="Work at the speed"
-                      subtitle="The gradual accumulation of information about "
-                      btnText="LearnMore"
-                    />
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    <PostCard
-                      title="Work at the speed"
-                      subtitle="The gradual accumulation of information about "
-                      btnText="LearnMore"
-                    />
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    <PostCard
-                      title="Work at the speed"
-                      subtitle="The gradual accumulation of information about "
-                      
-                    />
-                  </div>
-                  <div className="col-md-6 col-sm-12">
-                    <PostCard
-                      title="Work at the speed"
-                      subtitle="The gradual accumulation of information about "
-                      
-                    />
-                  </div>
+                  {advantages.map((item) => {
+                    return (
+                      <div className="col-md-6 col-sm-12">
+                        <PostCard
+                          title={item.title}
+                          subtitle={item.subtitle}
+                          btnText={item.btnText}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

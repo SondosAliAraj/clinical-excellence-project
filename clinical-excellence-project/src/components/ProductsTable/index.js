@@ -46,6 +46,10 @@ const ProductsTable = () => {
   };
 
   const handlePreview = (product) => {
+    const imageSrc = product.image.split("C:\\fakepath\\")[1];
+    console.log(product.image);
+    console.log("hellooooooo", imageSrc);
+    console.log(`./assets/${imageSrc}`);
     Swal.fire({
       title: product.name,
       html: `
@@ -108,8 +112,8 @@ const ProductsTable = () => {
                   <Loader />
                 ) : (
                   <tbody>
-                    {products.map((product) => (
-                      <tr key={product.id}>
+                    {products.map((product, index) => (
+                      <tr key={index}>
                         <td>{product.name}</td>
                         <td>
                           <img src={product.image} style={{ width: "30%" }} />

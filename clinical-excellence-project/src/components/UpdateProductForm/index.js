@@ -11,7 +11,7 @@ const UpdateProductForm = ({ id, productInfo, onUpdate, onClose }) => {
 
     const updatedProduct = {
       name,
-      image,
+      image: `./assets/${image.split("C:\\fakepath\\")[1]}`,
       category,
       price,
     };
@@ -55,20 +55,11 @@ const UpdateProductForm = ({ id, productInfo, onUpdate, onClose }) => {
         <input
           type="file"
           className="form-control-file my-3"
-          //   id="image"
-          //   onChange={(event) => setImage(event.target.value)}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="image">Image (for test purpose):</label>
-        <input
-          type="text"
-          className="form-control-file my-3"
           id="image"
-          value={image}
           onChange={(event) => setImage(event.target.value)}
         />
       </div>
+
       <div className="form-group">
         <input
           type="number"

@@ -20,12 +20,20 @@ const AddProductForm = ({ addProduct }) => {
   };
 
   const handleImageChange = (e) => {
-    setImage(e.target.files[0]);
+    const imageSrc = `./assets/${e.target.files[0].name}`;
+    setImage(imageSrc);
+    console.log("add image", setImage(`./assets/${e.target.files[0].name}`));
+    console.log("add image", `./assets/${e.target.files[0].name}`);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addProduct({ name, category, image, price });
+    addProduct({
+      name,
+      category,
+      image,
+      price,
+    });
     setName("");
     setCategory("");
     setPrice("");
@@ -93,15 +101,6 @@ const AddProductForm = ({ addProduct }) => {
                 className="form-control-file my-3"
                 id="image"
                 onChange={handleImageChange}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="image">Image (for test purpose):</label>
-              <input
-                type="text"
-                className="form-control-file my-3"
-                id="image"
-                onChange={(event) => setImage(event.target.value)}
               />
             </div>
             <div className="text-center">

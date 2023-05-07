@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import { Dropdown } from "react-bootstrap";
 
@@ -13,9 +14,11 @@ const NavbarItem = () => {
         >
           <ul class="navbar-nav itemsText">
             <li class="nav-item">
-              <a href="/" class="nav-link pe-4 navbarItem">
-                Home
-              </a>
+              <Link to="/" className="text-decoration-none">
+                <a href="" class="nav-link pe-4 navbarItem">
+                  Home
+                </a>
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <Dropdown className="border-0">
@@ -32,7 +35,9 @@ const NavbarItem = () => {
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="/products">Cancer center</Dropdown.Item>
-                  <Dropdown.Item href="/products">Outpatient care</Dropdown.Item>
+                  <Dropdown.Item href="/products">
+                    Outpatient care
+                  </Dropdown.Item>
                   <Dropdown.Item href="/products">Neurosurgery</Dropdown.Item>
                   <Dropdown.Item href="/products">Women's health</Dropdown.Item>
                   <Dropdown.Item href="/products">Prenatal care</Dropdown.Item>
@@ -55,9 +60,11 @@ const NavbarItem = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a href="/pages" class="nav-link pe-4 navbarItem">
-                Pages
-              </a>
+              <Link to="/pages" className="text-decoration-none">
+                <a href="" class="nav-link pe-4 navbarItem">
+                  Pages
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

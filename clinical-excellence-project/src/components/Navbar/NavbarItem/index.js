@@ -55,7 +55,7 @@ const NavbarItem = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a href="#pages" class="nav-link pe-4 navbarItem">
+              <a href="/pages" class="nav-link pe-4 navbarItem">
                 Pages
               </a>
             </li>

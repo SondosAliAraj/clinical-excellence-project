@@ -60,7 +60,7 @@ const LatestNewsSection = () => {
   ];
   return (
     <>
-      <section id="blog">
+      <section id="pages">
         <div className="container centerContainer d-flex flex-column">
           <div className="latestNewsContainer  d-flex flex-column">
             <div className="row latestNewsHeaderRow">

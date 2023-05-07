@@ -18,7 +18,6 @@ function HomePage() {
       <AdvantagesSection />
       <LatestNewsSection />
       <ReviewsSection />
-      <ContactsSection />
     </>
   );
 }

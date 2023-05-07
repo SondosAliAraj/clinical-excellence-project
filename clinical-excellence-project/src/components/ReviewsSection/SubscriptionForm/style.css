@@ -61,10 +61,10 @@
   border: 1px solid #e6e6e6;
   height: 40px;
 }
-.subscribrBtn {
+/* .subscribeBtn {
   box-sizing: border-box;
 
-  /* primary-color */
+  
 
   background: #23a6f0;
   border: 1px solid #e6e6e6;
@@ -75,16 +75,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  /* identical to box height, or 200% */
+  
 
   text-align: center;
   letter-spacing: 0.2px;
 
-  /* light-text-color */
+
 
   color: #ffffff;
   height: 40px;
-}
+} */
 .emailInputContainer {
   display: flex;
   align-items: center;

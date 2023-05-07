@@ -13,3 +13,8 @@
     margin: auto;
     margin-top: 68px;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #23a6f0;
+}
